@@ -1,0 +1,12 @@
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\bin\Debug\Practica4-reloj.exe.config
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\bin\Debug\Practica4-reloj.exe
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\bin\Debug\Practica4-reloj.pdb
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\bin\Debug\Practica4-reloj.xml
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4-reloj.vbprojAssemblyReference.cache
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4_reloj.Form1.resources
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4_reloj.Resources.resources
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4-reloj.vbproj.GenerateResource.cache
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4-reloj.vbproj.CoreCompileInputs.cache
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4-reloj.exe
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4-reloj.xml
+C:\DYLAN 24638\Practica4-reloj\Practica4-reloj\obj\Debug\Practica4-reloj.pdb
