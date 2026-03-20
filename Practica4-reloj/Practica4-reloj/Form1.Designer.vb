@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.horas = New System.Windows.Forms.Label()
@@ -33,8 +33,10 @@ Partial Class Form1
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.segundos = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -46,7 +48,7 @@ Partial Class Form1
         Me.horas.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.horas.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.horas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.horas.Location = New System.Drawing.Point(220, 229)
+        Me.horas.Location = New System.Drawing.Point(223, 229)
         Me.horas.Name = "horas"
         Me.horas.Size = New System.Drawing.Size(106, 73)
         Me.horas.TabIndex = 0
@@ -58,7 +60,7 @@ Partial Class Form1
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(332, 229)
+        Me.Label1.Location = New System.Drawing.Point(335, 229)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(51, 73)
         Me.Label1.TabIndex = 1
@@ -70,7 +72,7 @@ Partial Class Form1
         Me.minutos.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.minutos.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.minutos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.minutos.Location = New System.Drawing.Point(389, 229)
+        Me.minutos.Location = New System.Drawing.Point(392, 229)
         Me.minutos.Name = "minutos"
         Me.minutos.Size = New System.Drawing.Size(106, 73)
         Me.minutos.TabIndex = 2
@@ -129,13 +131,32 @@ Partial Class Form1
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(220, 180)
+        Me.Panel1.Location = New System.Drawing.Point(205, 190)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(288, 277)
+        Me.Panel1.Size = New System.Drawing.Size(313, 280)
         Me.Panel1.TabIndex = 7
         Me.Panel1.Visible = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Blanco", "Rojo", "Azul", "Amarillo", "Verde"})
+        Me.ComboBox1.Location = New System.Drawing.Point(35, 126)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 2
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(35, 65)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -147,14 +168,17 @@ Partial Class Form1
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Configuraciones"
         '
-        'Button1
+        'segundos
         '
-        Me.Button1.Location = New System.Drawing.Point(35, 65)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.segundos.AutoSize = True
+        Me.segundos.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.segundos.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.segundos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.segundos.Location = New System.Drawing.Point(436, 187)
+        Me.segundos.Name = "segundos"
+        Me.segundos.Size = New System.Drawing.Size(62, 42)
+        Me.segundos.TabIndex = 8
+        Me.segundos.Text = "00"
         '
         'Form1
         '
@@ -162,6 +186,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(730, 659)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.segundos)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.fecha)
         Me.Controls.Add(Me.dias)
@@ -192,4 +217,6 @@ Partial Class Form1
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents segundos As Label
 End Class
