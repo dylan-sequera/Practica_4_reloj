@@ -27,6 +27,11 @@ Practica4-reloj
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Practica4_reloj.My.Resources.Resources.cronometro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Practica4_reloj.My.Resources.Resources.smartwatch">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

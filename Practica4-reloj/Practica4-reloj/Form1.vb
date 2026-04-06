@@ -46,6 +46,7 @@
         End If
     End Sub
 
+    'Boton de configuraciones
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         If Panel1.Visible = False Then
             Panel1.Visible = True
@@ -103,15 +104,24 @@
         End If
     End Sub
 
+    '=========================
+    'Código para el cronometro
+    '=========================
+
+    Private startTime As DateTime
+    Private elapsed As TimeSpan = TimeSpan.Zero
+
     Private Sub start_Click(sender As Object, e As EventArgs) Handles start.Click
         If boton_start = False Then
             Timer3.Enabled = True
             boton_start = True
             start.Text = "Stop"
+            startTime = DateTime.Now
         ElseIf boton_start = True Then
             Timer3.Enabled = False
             boton_start = False
             start.Text = "Start"
+            elapsed += DateTime.Now - startTime
         End If
     End Sub
 
@@ -124,5 +134,15 @@
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
         tiempo_crono = tiempo_crono + 1
         tiempo.Text = tiempo_crono.ToString()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        If Panel2.Visible = False Then
+            Panel2.Visible = True
+        ElseIf Panel2.Visible = True Then
+            Panel2.Visible = False
+        End If
+    End Sub
+
     End Sub
 End Class

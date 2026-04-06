@@ -73,6 +73,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property cronometro() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cronometro", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property smartwatch() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("smartwatch", resourceCulture)

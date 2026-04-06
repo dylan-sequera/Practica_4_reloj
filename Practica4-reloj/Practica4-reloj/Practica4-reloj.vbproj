@@ -125,5 +125,8 @@
   <ItemGroup>
     <None Include="Resources\configuracion blanco.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cronometro.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
